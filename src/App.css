@@ -1,0 +1,15 @@
+body{
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root{
+  background: radial-gradient(circle at 50% -110%, var(--Very-Dark-Blue) , var(--Dark-Blue) );
+  color: var(--White);
+  max-width: 300px;
+  border-radius: 24px;
+  padding: 24px;
+}
