@@ -1,3 +1,5 @@
+import './Attribution.css'
+
 function Attribution(){
   return(
     <footer className="attribution">

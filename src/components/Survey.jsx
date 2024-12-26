@@ -11,20 +11,20 @@ function Survey(){
       </p>
       <form>
         <div>
-          <label htmlFor="1">1</label>
           <input type="radio" name="value" id="1" value="1"/>
+          <label htmlFor="1">1</label>
 
-          <label htmlFor="2">2</label>
           <input type="radio" name="value" id="2" value="2"/>
+          <label htmlFor="2">2</label>
 
-          <label htmlFor="3">3</label>
           <input type="radio" name="value" id="3" value="3"/>
+          <label htmlFor="3">3</label>
 
-          <label htmlFor="4">4</label>
           <input type="radio" name="value" id="4" value="4"/>
+          <label htmlFor="4">4</label>
 
-          <label htmlFor="5">5</label>
           <input type="radio" name="value" id="5" value="5"/>
+          <label htmlFor="5">5</label>
         </div>
         <button>Submit</button>
       </form>

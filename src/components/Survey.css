@@ -1,7 +1,7 @@
 .survey{
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 
   & img{
     background-color: var(--Dark-Blue);
@@ -50,6 +50,11 @@
 
       & input{
         display: none;
+      }
+
+      & input:checked + label{
+        background-color: var(--White);
+        color: var(--Very-Dark-Blue);
       }
     }
 

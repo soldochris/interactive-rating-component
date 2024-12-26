@@ -1,0 +1,15 @@
+.attribution{
+  padding-top: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--Light-Grey);
+
+  & a{
+    color: var(--Light-Grey);
+  }
+
+  & a:hover{
+    color: var(--Orange);
+    text-decoration: none;
+  }
+}
