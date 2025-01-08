@@ -14,7 +14,7 @@ function App() {
       {
         rating == null ?
         <Survey setRating={setRating}/> :
-        <Result/>
+        <Result rating={rating}/>
       }
       <Attribution/>
     </>
