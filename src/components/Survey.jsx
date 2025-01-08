@@ -8,9 +8,7 @@ function Survey({setRating}){
 
   function handleSubmit(event){
     event.preventDefault()
-
     setRating(currentVal)
-    console.log(currentVal)
   }
 
   return (
