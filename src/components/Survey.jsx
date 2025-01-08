@@ -2,18 +2,15 @@
 import { useState } from 'react'
 import './Survey.css'
 
-function Survey(){
+function Survey({setRating}){
 
-  const [rating, setRating] = useState(null);
+  const [currentVal, setCurrentVal] = useState(0)
 
   function handleSubmit(event){
     event.preventDefault()
 
-    const formData = new FormData(event.target)
-    const value = formData.get("value")
-
-    setRating(value)
-    console.log(value)
+    setRating(currentVal)
+    console.log(currentVal)
   }
 
   return (
@@ -31,7 +28,7 @@ function Survey(){
             name="value" 
             id="1" 
             value="1"
-            onChange={(e)=>setRating(e.target.value)}
+            onChange={(e)=>setCurrentVal(e.target.value)}
           />
           <label htmlFor="1">1</label>
 
@@ -40,7 +37,7 @@ function Survey(){
             name="value" 
             id="2" 
             value="2"
-            onChange={(e)=>setRating(e.target.value)}
+            onChange={(e)=>setCurrentVal(e.target.value)}
           />
           <label htmlFor="2">2</label>
 
@@ -49,7 +46,7 @@ function Survey(){
             name="value" 
             id="3" 
             value="3"
-            onChange={(e)=>setRating(e.target.value)}
+            onChange={(e)=>setCurrentVal(e.target.value)}
           />
           <label htmlFor="3">3</label>
 
@@ -58,7 +55,7 @@ function Survey(){
             name="value" 
             id="4" 
             value="4"
-            onChange={(e)=>setRating(e.target.value)}
+            onChange={(e)=>setCurrentVal(e.target.value)}
           />
           <label htmlFor="4">4</label>
 
@@ -67,7 +64,7 @@ function Survey(){
             name="value" 
             id="5" 
             value="5"
-            onChange={(e=>setRating(e.target.value))}
+            onChange={(e=>setCurrentVal(e.target.value))}
           />
           <label htmlFor="5">5</label>
         </div>
